@@ -1,0 +1,17 @@
+INDIGO_WELCOME_MESSAGE: "Todos los cursos poseen certificacion APUNCA. Inscribete hoy!!"
+INDIGO_PRIMARY_COLOR: "#3b85ff" # cool blue
+
+# Footer links are dictionaries with a "title" and "url"
+# To remove all links, write:
+# INDIGO_FOOTER_NAV_LINKS: []
+# INDIGO_FOOTER_LEGAL_LINKS: []
+INDIGO_FOOTER_NAV_LINKS:
+  - title: "Nosotros"
+    url: "/about"
+  - title: "Contacto"
+    url: "/contact"
+INDIGO_FOOTER_LEGAL_LINKS:
+    - title: "Terminos del Servicio"
+      url: "/tos"
+    - title: "Apunca"
+      url: "http://apunca.org.ar"
