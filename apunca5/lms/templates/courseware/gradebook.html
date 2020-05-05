@@ -107,7 +107,7 @@ from six import text_type
 
             data_class = "grade_" + letter_grade
           %>
-          <td class="${data_class}" data-percent="${fraction}" title="${label}">  ${ "{0:.0f}".format( 100 * fraction / 10 ) }</td> <!--Agregado / 10 -->
+          <td class="${data_class}" data-percent="${fraction}" title="${label}">  ${ "{0:.2f}".format( 100 * fraction / 10 ) }</td> <!--Agregado / 10 -->
         </%def>
 
         <tbody>
