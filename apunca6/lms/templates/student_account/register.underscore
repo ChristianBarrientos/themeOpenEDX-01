@@ -1,6 +1,5 @@
 <div class="js-form-feedback" aria-live="assertive" tabindex="-1">
 </div>
-<h1>aCAESASDASD</H1>
 <% if (!context.syncLearnerProfileData) { %>
 	<div class="toggle-form">
 		<span class="text"><%- edx.StringUtils.interpolate(gettext('Already have an {platformName} account?'), {platformName: context.platformName }) %></span>
@@ -48,7 +47,6 @@
             <h2><%- gettext('Create an Account')%></h2>
         <% } %>
     <% } else if (context.autoRegisterWelcomeMessage) { %>
-        <span class="auto-register-message"><%- context.autoRegisterWelcomeMessage %></span>
     <% } %>
 
     <%= context.fields %>
