@@ -31,9 +31,16 @@
 
 <%block name="header_extras">
     % for template_name in ["account", "access", "form_field", "login", "register", "institution_login", "institution_register", "password_reset", "hinted_login"]:
-        <script type="text/template" id="${template_name}-tpl">
-            <%static:include path="student_account/${template_name}.underscore" />
-        </script>
+        % if  template_name == "register":
+                <h1>${settings.PLATFORM_NAME} </h1>
+                <script type="text/template" id="${template_name}-tpl">
+                    <%static:include path="student_account/${template_name}.underscore" />
+                </script>
+        % else:
+            <script type="text/template" id="${template_name}-tpl">
+                <%static:include path="student_account/${template_name}.underscore" />
+            </script>
+        % endif 
     % endfor
 </%block>
 <div class="section-bkg-wrapper">
@@ -55,3 +62,9 @@
         </div>
     </main>
 </div>
+
+<style>
+.plaintext-honor_code{
+    display: none;
+}
+</style>

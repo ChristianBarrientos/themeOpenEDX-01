@@ -47,6 +47,8 @@
             <h2><%- gettext('Create an Account')%></h2>
         <% } %>
     <% } else if (context.autoRegisterWelcomeMessage) { %>
+           <!-- <span class="auto-register-message"><%- context.autoRegisterWelcomeMessage %></span>-->
+
     <% } %>
 
     <%= context.fields %>
